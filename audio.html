@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    h1{
+        text-align: center;
+    }
+    datalist{
+        border: 5px cadetblue;
+        border-radius: 30px;
+        width: fit-content;
+        
+    }
+    #img{
+    flex-wrap: nowrap;
+    display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+  
+    }
+    select{
+        border: 5px cadetblue;
+            border-radius: 10px;
+            width: fit-content;
+    }
+
+    select{
+        border: 3px cadetblue solid;
+        border-radius: 15px;
+        height: 35px;
+        width: 100px;
+        color: cadetblue;
+        background-color: rgba(0, 0, 0, 0.932);
+        padding-left: 15px;
+        margin-left: 10px;
+    }
+    select:focus{
+        border: 3px cadetblue solid;
+        outline: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    select:hover{
+        cursor: pointer;
+    }
+    #box1{
+        border: 2px cadetblue solid;
+        border-radius: 15px;
+        height: 30px;
+        text-align: center;
+       color: cadetblue;
+       background-color: black;
+    }
+    #box1:focus{
+        border: 3px cadetblue solid;
+        outline: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    #box1:hover{
+        cursor: pointer;
+    }
+    .center1{
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        grid-template-columns: auto auto auto auto auto;
+        margin-left: 150px;
+       margin: 10px;
+        padding: 30px;
+        padding-right: 0px;
+       
+     }
+     #img1{
+        padding-right: 10px;
+        border: 3px black solid;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+        
+       
+     }
+     #img2{
+        padding-right: 25px;
+        border: 3px black solid;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    
+     }
+     #img3{
+        padding-right: 25px;
+        border: 3px black solid;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    
+     }
+     #img4{
+        padding-right: 25px;
+        border: 3px black solid;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    
+     }
+     #img5{
+        padding-right: 25px;
+        border: 3px black solid;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    
+     }
+
+   
+    
+
+   
+</style>
+<div id="div1">
+<body bgcolor="pink">
+    <h1 style="background-color:magenta; text-align: center;">Listen To Your Favourite Songs</h1>
+</div>
+    <form>
+
+        <table class="center">
+            <tr>
+                <td><input type="text" list="search" placeholder="search" id="box1">
+                <datalist>
+                    <option>Darling </option>
+                    <option>Sachin</option>
+                    <option>Thamirabarani</option>
+                    <option>Vishal</option>
+                    <option>Yaaradi</option>
+                </datalist>
+                <select onchange="location=this.value;">
+                    <option>Language</option>
+                    <option value="./Englishsongs.html">English</option>
+                    <option value="Tamilsongs.html">Tamil</option>
+                </select>
+</td>
+            </tr>
+            
+        </table>
+    </form>
+    <h2 style="background-color:magenta; text-align: center;">Recently Played</h2>
+    <form>
+        <div class="center1">
+           <a href="./songs.html"><img src="./images2.jpg" height="200px" width="200px" id="img1"></a>
+           <a href="./songs.html"><img src="./gv img.jpg" height="200px" width="200px" id="img2"></a>
+            <a href="./songs.html"><img src="./images3.jpg" height="200px" width="200px" id="img3"></a>
+            <a href="./songs.html"><img src="./images4.jpg" height="200px" width="200px" id="img4"></a>
+            <a href="./songs.html"><img src="./1.jpg" height="200px" width="200px" id="img5"></a>
+        </div>
+        </table>
+    </form>
+</body>
+</html>
